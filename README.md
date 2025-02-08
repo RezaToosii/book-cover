@@ -9,15 +9,15 @@ This repository contains the implementation of a multi-modal classifier designed
 
 - [Overview](#overview)
 - [Features](#features)
+- [Database](#database)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Command-Line Arguments](#command-line-arguments)
+  - [Key Arguments](#Key-Arguments)
   - [Example Command](#example-command)
+- [Training Configuration](#training-configuration)
 - [File Structure](#file-structure)
 - [Results and Logging](#results-and-logging)
-- [Citation](#citation)
-- [License](#license)
 - [Contact](#contact)
 
 
@@ -40,7 +40,15 @@ The classifier fuses these features using a configurable combined classifier, wh
 - **Detailed Logging**: Logs training progress to `training.log` and final results (including per-class accuracies) to `result.log`.
 - **Reproducible Research**: Designed to support reproducible experiments for academic research.
 
+## Database
 
+The dataset used for this project is publicly available and has been carefully curated to support multi-modal book cover classification. The database includes:
+
+You can download the complete dataset from the following link:
+
+[Download Dataset](https://drive.google.com/file/d/14Vx5WhkFe4LZM4x1p8kfybbYkAiQ52oS/view?usp=sharing)
+
+*Note: Please ensure that the dataset is extracted to the repository root or update the file paths in the code accordingly.*
 
 ## Requirements
 
@@ -157,22 +165,6 @@ Best Val Top3:
 
 Per-Class Validation Accuracies (Best Epoch):
 ```
-
-
-## Citation
-
-If you use this code in your research, please consider citing our paper:
-
-```
-soon
-```
-
-Additionally, please cite the respective sources for the pre-trained models:
-- Sentence Transformers: [All-MiniLM-L6-v2](https://www.sbert.net/)
-- NVIDIA MambaVision: [NVIDIA MambaVision-T-1K](https://huggingface.co/nvidia/MambaVision-T-1K)
-- CLIP: [CLIP](https://github.com/openai/CLIP)
-
-
 
 ## Contact
 
